@@ -1,0 +1,13 @@
+{
+    "name": "priority queue",
+    "category": [
+        "Messaging", 
+        "Performance Efficiency"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/priority-queue-service-bus.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue"}],
+    "summary": "Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority. This pattern is useful in applications that offer different service level guarantees to individual clients."
+}

@@ -4,9 +4,9 @@
         "Reliability"
     ],
     "example": [
-        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue#example"}
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/retry#example"}
     ],
-    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/priority-queue-service-bus.png",
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/retry-pattern.png",
     "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/retry"}],
     "summary": "Enable an application to handle transient failures when it tries to connect to a service or network resource, by transparently retrying a failed operation. This can improve the stability of the application."
 }

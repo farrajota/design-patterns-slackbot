@@ -109,13 +109,18 @@ def generate_message(
     ]
 
     if len(image_url) > 0:
-         slack_message[1].update({
-            "accessory": {
-                  "type": "image",
-                  "image_url": f"{image_url}",
-                  "alt_text": name
-              }
-         })
+         slack_message.append(
+             {
+                "type": "image",
+                "title": {
+                    "type": "plain_text",
+                    "text": f"{name} design pattern image",
+                },
+                "block_id": "quickchart-image",
+                "image_url": f"{image_url}",
+                "alt_text": name,
+            },
+         )
 
     return slack_message
 

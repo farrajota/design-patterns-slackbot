@@ -1,0 +1,10 @@
+{
+    "name": "Anti-Corruption Layer",
+    "category": [
+        "Design and Implementation", 
+        "Operational Excellence"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/anti-corruption-layer.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer"}],
+    "summary": "Implement a façade or adapter layer between different subsystems that don't share the same semantics."
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Bulkhead",
+    "category": [
+        "Reliability"
+    ],
+    "example": [
+        {"language": "YAML", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/bulkhead-1.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead"}],
+    "summary": "Isolate elements of an application into pools so that if one fails, the others will continue to function."
+}

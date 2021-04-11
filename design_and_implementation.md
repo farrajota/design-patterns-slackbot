@@ -7,3 +7,4 @@
 | Backends for Frontends | Create separate backend services to be consumed by specific frontend applications or interfaces. |  |
 | Command and Query Responsibility Segregation (CQRS) | Segregate operations that read data from operations that update data by using separate interfaces. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs#example) |
 | Compute Resource Consolidation | Consolidate multiple tasks or operations into a single computational unit. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation#example) |
+| External Configuration Store | Move configuration information out of the application deployment package to a centralized location. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store#example) |

@@ -1,0 +1,13 @@
+{
+    "name": "External Configuration Store",
+    "category": [
+        "Design and Implementation",
+        "Operational Excellence"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/external-configuration-store-overview.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store"}],
+    "summary": "Move configuration information out of the application deployment package to a centralized location."
+}

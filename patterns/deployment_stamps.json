@@ -1,0 +1,10 @@
+{
+    "name": "Deployment Stamps",
+    "category": [
+        "Reliability",
+        "Performance Efficiency"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/deployment-stamp/deployment-stamp-traffic-routing.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/deployment-stamp"}],
+    "summary": "Deploy multiple independent copies of application components, including data stores."
+}

@@ -11,3 +11,4 @@
 | Publisher/Subscriber | Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers. |  |
 | Queue-Based Load Leveling | Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads. |  |
 | Scheduler Agent Supervisor | Coordinate a set of actions across a distributed set of services and other remote resources. |  |
+| Sequential Convoy | Process a set of related messages in a defined order, without blocking processing of other groups of messages. |  |

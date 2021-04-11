@@ -38,6 +38,7 @@ List fo design patterns I've found that look promising to learn more about / tak
 | Queue-Based Load Leveling | Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads. | [Reliability](reliability.md) [Messaging](messaging.md) [Resiliency](resiliency.md) [Performance Efficiency](performance_efficiency.md) |  |
 | Retry | Enable an application to handle transient failures when it tries to connect to a service or network resource, by transparently retrying a failed operation. This can improve the stability of the application. | [Reliability](reliability.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry#example) |
 | Scheduler Agent Supervisor | Coordinate a set of actions across a distributed set of services and other remote resources. | [Messaging](messaging.md) [Reliability](reliability.md) |  |
+| Sequential Convoy | Process a set of related messages in a defined order, without blocking processing of other groups of messages. | [Messaging](messaging.md) |  |
 
 ## Categories of Design Patterns
 

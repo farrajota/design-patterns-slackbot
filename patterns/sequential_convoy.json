@@ -1,0 +1,9 @@
+{
+    "name": "Sequential Convoy",
+    "category": [
+        "Messaging"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/sequential-convoy-queuemessages.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/sequential-convoy"}],
+    "summary": "Process a set of related messages in a defined order, without blocking processing of other groups of messages."
+}

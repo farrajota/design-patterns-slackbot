@@ -1,0 +1,13 @@
+{
+    "name": "Cache-Aside",
+    "category": [
+        "Data Management", 
+        "Performance Efficiency"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/cache-aside#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/cache-aside-diagram.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/cache-aside"}],
+    "summary": "Load data on demand into a cache from a data store."
+}

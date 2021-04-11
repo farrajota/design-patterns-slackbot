@@ -1,0 +1,9 @@
+{
+    "name": "Publisher/Subscriber",
+    "category": [
+        "Messaging"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/publish-subscribe.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber"}],
+    "summary": "Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers."
+}

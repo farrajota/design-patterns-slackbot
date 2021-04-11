@@ -1,0 +1,13 @@
+{
+    "name": "Gateway Offloading",
+    "category": [
+        "Design and Implementation",
+        "Operational Excellence"
+    ],
+    "example": [
+        {"language": "conf", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/gateway-offload.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading"}],
+    "summary": "Offload shared or specialized service functionality to a gateway proxy."
+}

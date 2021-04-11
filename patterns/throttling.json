@@ -1,0 +1,10 @@
+{
+    "name": "Throttling",
+    "category": [
+        "Reliability",
+        "Performance Efficiency"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/throttling-resource-utilization.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/throttling"}],
+    "summary": "Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service."
+}

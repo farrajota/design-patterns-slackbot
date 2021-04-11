@@ -35,6 +35,7 @@ List fo design patterns I've found that look promising to learn more about / tak
 | Pipes and Filters | Break down a task that performs complex processing into a series of separate elements that can be reused. | [Design And Implementation](design_and_implementation.md) [Messaging](messaging.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters#example) |
 | Priority Queue | Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority. This pattern is useful in applications that offer different service level guarantees to individual clients. | [Messaging](messaging.md) [Performance Efficiency](performance_efficiency.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue#example) |
 | Publisher/Subscriber | Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers. | [Messaging](messaging.md) |  |
+| Queue-Based Load Leveling | Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads. | [Reliability](reliability.md) [Messaging](messaging.md) [Resiliency](resiliency.md) [Performance Efficiency](performance_efficiency.md) |  |
 | Retry | Enable an application to handle transient failures when it tries to connect to a service or network resource, by transparently retrying a failed operation. This can improve the stability of the application. | [Reliability](reliability.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry#example) |
 
 ## Categories of Design Patterns
@@ -45,6 +46,7 @@ List fo design patterns I've found that look promising to learn more about / tak
 - [Operational Excellence](operational_excellence.md)
 - [Performance Efficiency](performance_efficiency.md)
 - [Reliability](reliability.md)
+- [Resiliency](resiliency.md)
 - [Security](security.md)
 
 # References

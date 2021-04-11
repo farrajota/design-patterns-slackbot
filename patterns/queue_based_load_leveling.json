@@ -1,0 +1,12 @@
+{
+    "name": "Queue-Based Load Leveling",
+    "category": [
+        "Reliability",
+        "Messaging",
+        "Resiliency",
+        "Performance Efficiency"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/queue-based-load-leveling-pattern.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling"}],
+    "summary": "Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads."
+}

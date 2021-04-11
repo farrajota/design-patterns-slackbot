@@ -79,7 +79,7 @@ def generate_message(
             "block_id": "section567",
             "text": {
                 "type": "mrkdwn",
-                "text": f"<{reference[0]['href']}|{capwords(name)} pattern> \n {summary}."
+                "text": f"<{reference[0]['href']}|{capwords(name)} pattern> \n {summary}"
             }
         },
         {

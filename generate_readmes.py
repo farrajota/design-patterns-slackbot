@@ -59,7 +59,7 @@ def main(path: str):
         f.write("\n")
         f.write("## Categories of Design Patterns\n")
         f.write("\n")
-        for category in unique_categories:
+        for category in sorted(unique_categories):
             f.write(f"- [{capwords(category)}]({category.lower().replace(' ', '_')}.md)\n")
         f.write("\n")
         f.write("# References\n")
@@ -77,7 +77,7 @@ def main(path: str):
             f.write("\n")
             f.write("| Pattern | Summary | Implementations |\n")
             f.write("| --- | --- | --- |\n")
-            for row in category_readmes[category_filename]:
+            for row in sorted(category_readmes[category_filename]):
                 f.write(f"{row}\n")
 
 

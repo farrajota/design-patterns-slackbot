@@ -1,0 +1,13 @@
+{
+    "name": "Geodes",
+    "category": [
+        "Reliability",
+        "Operational Excellence"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/retry#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/geode.jpg",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/geodes"}],
+    "summary": "Deploy backend services into a set of geographical nodes, each of which can service any client request in any region."
+}

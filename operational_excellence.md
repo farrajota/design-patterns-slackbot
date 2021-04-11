@@ -8,3 +8,4 @@
 | Gateway Aggregation | Use a gateway to aggregate multiple individual requests into a single request. | [Conf](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation#example) |
 | Gateway Offloading | Offload shared or specialized service functionality to a gateway proxy. | [Conf](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading#example) |
 | Gateway Routing | Route requests to multiple services using a single endpoint. | [Conf](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing#example) |
+| Geodes | Deploy backend services into a set of geographical nodes, each of which can service any client request in any region. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry#example) |

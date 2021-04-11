@@ -12,3 +12,4 @@
 | Gateway Offloading | Offload shared or specialized service functionality to a gateway proxy. | [Nginx Conf](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading#example) |
 | Gateway Routing | Route requests to multiple services using a single endpoint. | [Nginx Conf](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing#example) |
 | Leader Election | Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election#example) |
+| Pipes and Filters | Break down a task that performs complex processing into a series of separate elements that can be reused. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters#example) |

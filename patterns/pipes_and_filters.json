@@ -1,0 +1,13 @@
+{
+    "name": "Pipes and Filters",
+    "category": [
+        "Design and Implementation",
+        "Messaging"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/pipes-and-filters-load-balancing.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"}],
+    "summary": "Break down a task that performs complex processing into a series of separate elements that can be reused."
+}

@@ -6,3 +6,4 @@
 | Command and Query Responsibility Segregation (CQRS) | Segregate operations that read data from operations that update data by using separate interfaces. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs#example) |
 | Event Sourcing | Use an append-only store to record the full series of events that describe actions taken on data in a domain. |  |
 | Index Table | Create indexes over the fields in data stores that are frequently referenced by queries. |  |
+| Materialized View | Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations. |  |

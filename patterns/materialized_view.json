@@ -1,0 +1,10 @@
+{
+    "name": "Materialized View",
+    "category": [
+        "Data Management",
+        "Operational Excellence"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/materialized-view-pattern-diagram.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view"}],
+    "summary": "Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations."
+}

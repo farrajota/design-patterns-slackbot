@@ -1,0 +1,13 @@
+{
+    "name": "Gateway Routing",
+    "category": [
+        "Design and Implementation",
+        "Operational Excellence"
+    ],
+    "example": [
+        {"language": "conf", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/gateway-routing.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-routing"}],
+    "summary": "Route requests to multiple services using a single endpoint."
+}

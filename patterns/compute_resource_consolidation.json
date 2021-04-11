@@ -1,0 +1,12 @@
+{
+    "name": "Compute Resource Consolidation",
+    "category": [
+        "Design and Implementation"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/compute-resource-consolidation-diagram.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation"}],
+    "summary": "Consolidate multiple tasks or operations into a single computational unit."
+}

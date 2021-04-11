@@ -23,7 +23,7 @@ def main(path: str):
         try:
             examples = data["example"]
         except KeyError:
-            exampels = []
+            examples = []
         examples_str = ""
         if any(examples):
             examples_str = " ".join([f"[{capwords(example['language'])}]({example['href']})" for example in examples])

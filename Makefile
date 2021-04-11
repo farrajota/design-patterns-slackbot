@@ -6,5 +6,10 @@ test:
 	@SLACK_API_KEY=${SLACK_API_KEY} SLACK_CHANNEL=${SLACK_CHANNEL} python src/slackbot.py
 	@echo "Done."
 
+test-random:
+	@echo "Start slackbot"
+	@SLACK_API_KEY=${SLACK_API_KEY} SLACK_CHANNEL=${SLACK_CHANNEL} python src/slackbot.py --random
+	@echo "Done."
+
 generate:
 	python generate_readmes.py

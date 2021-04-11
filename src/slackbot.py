@@ -1,6 +1,7 @@
 import os
 import json
 import random
+import argparse
 import requests
 from pathlib import Path
 from string import capwords
@@ -10,11 +11,51 @@ CURRENT_FILE_PATH = str(Path().absolute())
 PATTERNS_DIR = os.path.join(CURRENT_FILE_PATH, 'patterns')
 
 
-def main(slack_api_key: str, channel: str) -> None:
+def main(slack_api_key: str, channel: str, is_random: bool = False) -> None:
+    if is_random:
+        send_random_slack_bot_message(
+            slack_api_key=slack_api_key,
+            channel=channel
+        )
+    else:
+        send_sequential_slack_bot_message(
+            slack_api_key=slack_api_key,
+            channel=channel
+        )
+
+
+def send_random_slack_bot_message(slack_api_key: str, channel: str) -> None:
+    pattern_files: list = load_pattern_files(PATTERNS_DIR)
+    random.shuffle(pattern_files)
+
+    data: dict = load_json_file(pattern_files[0])
+
+    if "example" not in data:
+        data["example"] = []
+    if "image_url" not in data:
+        data["image_url"] = []
+
+    msg = generate_message(
+        name=data["name"],
+        summary=data["summary"],
+        category=data["category"],
+        example=data["example"],
+        reference=data["reference"],
+        image_url=data["image_url"],
+    )
+
+    slack_send_message(
+        msg=msg,
+        slack_api_key=slack_api_key,
+        channel=channel
+    )
+
+
+def send_sequential_slack_bot_message(slack_api_key: str, channel: str) -> None:
     filepath = '/tmp/design_patterns.txt'
 
     if not os.path.exists(filepath):
-        Path(filepath).touch()     
+        Path(filepath).touch()
 
     with open(filepath, 'r') as f:
         pattern_files = f.read()
@@ -24,11 +65,16 @@ def main(slack_api_key: str, channel: str) -> None:
         random.shuffle(pattern_files)
     else:
         pattern_files = pattern_files.split('\n')
-    
+
     with open(filepath, 'w') as f:
         f.writelines("\n".join(pattern_files[1:]))
 
-    data = load_json_file(pattern_files[0])
+    data: dict = load_json_file(pattern_files[0])
+
+    if "example" not in data:
+        data["example"] = []
+    if "image_url" not in data:
+        data["image_url"] = []
 
     msg = generate_message(
         name=data["name"],
@@ -59,12 +105,12 @@ def load_json_file(path: str) -> dict:
 
 
 def generate_message(
-    name: str, 
-    summary: str, 
+    name: str,
+    summary: str,
     image_url: str,
     category: list,
-    example: list, 
-    reference: list, 
+    example: list,
+    reference: list,
 ) -> dict:
     slack_message = [
         {
@@ -127,8 +173,8 @@ def generate_message(
 
 def slack_send_message(msg: dict, slack_api_key: str, channel: str) -> None:
     payload = {
-        "token": slack_api_key, 
-        "channel": channel, 
+        "token": slack_api_key,
+        "channel": channel,
         "blocks": json.dumps(msg),
     }
     response = requests.post("https://slack.com/api/chat.postMessage", params=payload)
@@ -138,6 +184,10 @@ def slack_send_message(msg: dict, slack_api_key: str, channel: str) -> None:
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--random", help="Randomly selects a design pattern.", action="store_true")
+    args = parser.parse_args()
+
     slack_api_key = os.environ.get('SLACK_API_KEY')
     slack_channel = os.environ.get('SLACK_CHANNEL')
-    main(slack_api_key=slack_api_key, channel=slack_channel)
+    main(slack_api_key=slack_api_key, channel=slack_channel, is_random=args.random)

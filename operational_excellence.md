@@ -12,3 +12,4 @@
 | Health Endpoint Monitoring | Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring#example) |
 | Materialized View | Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations. |  |
 | Sidecar | Deploy components of an application into a separate process or container to provide isolation and encapsulation. |  |
+| Strangler Fig | Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services. |  |

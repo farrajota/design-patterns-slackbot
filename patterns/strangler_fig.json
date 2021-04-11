@@ -1,0 +1,10 @@
+{
+    "name": "Strangler Fig",
+    "category": [
+        "Design and Implementation",
+        "Operational Excellence"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/strangler.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig"}],
+    "summary": "Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services."
+}

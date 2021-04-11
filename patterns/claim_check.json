@@ -1,0 +1,12 @@
+{
+    "name": "Claim Check",
+    "category": [
+        "Messaging"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/claim-check#examples"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/claim-check.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/claim-check"}],
+    "summary": "Split a large message into a claim check and a payload to avoid overwhelming a message bus."
+}

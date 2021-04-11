@@ -1,0 +1,13 @@
+{
+    "name": "Valet Key",
+    "category": [
+        "Data Management",
+        "Security"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/valet-key-pattern.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key"}],
+    "summary": "Use a token or key that provides clients with restricted direct access to a specific resource or service."
+}

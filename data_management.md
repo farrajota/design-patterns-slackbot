@@ -8,3 +8,4 @@
 | Index Table | Create indexes over the fields in data stores that are frequently referenced by queries. |  |
 | Materialized View | Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations. |  |
 | Sharding | Divide a data store into a set of horizontal partitions or shards. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/sharding#example) |
+| Static Content Hosting | Deploy static content to a cloud-based storage service that can deliver them directly to the client. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting#example) |

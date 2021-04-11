@@ -11,3 +11,4 @@
 | Priority Queue | Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority. This pattern is useful in applications that offer different service level guarantees to individual clients. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue#example) |
 | Queue-Based Load Leveling | Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads. |  |
 | Sharding | Divide a data store into a set of horizontal partitions or shards. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/sharding#example) |
+| Static Content Hosting | Deploy static content to a cloud-based storage service that can deliver them directly to the client. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting#example) |

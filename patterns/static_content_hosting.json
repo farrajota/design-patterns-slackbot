@@ -1,0 +1,14 @@
+{
+    "name": "Static Content Hosting",
+    "category": [
+        "Design and Implementation",
+        "Data Management",
+        "Performance Efficiency"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/static-content-hosting-pattern.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting"}],
+    "summary": "Deploy static content to a cloud-based storage service that can deliver them directly to the client."
+}

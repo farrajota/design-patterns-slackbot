@@ -41,6 +41,7 @@ List fo design patterns I've found that look promising to learn more about / tak
 | Sequential Convoy | Process a set of related messages in a defined order, without blocking processing of other groups of messages. | [Messaging](messaging.md) |  |
 | Sharding | Divide a data store into a set of horizontal partitions or shards. | [Data Management](data_management.md) [Performance Efficiency](performance_efficiency.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/sharding#example) |
 | Sidecar | Deploy components of an application into a separate process or container to provide isolation and encapsulation. | [Design And Implementation](design_and_implementation.md) [Operational Excellence](operational_excellence.md) |  |
+| Static Content Hosting | Deploy static content to a cloud-based storage service that can deliver them directly to the client. | [Design And Implementation](design_and_implementation.md) [Data Management](data_management.md) [Performance Efficiency](performance_efficiency.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting#example) |
 
 ## Categories of Design Patterns
 

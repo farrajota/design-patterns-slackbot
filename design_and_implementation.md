@@ -14,3 +14,4 @@
 | Leader Election | Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election#example) |
 | Pipes and Filters | Break down a task that performs complex processing into a series of separate elements that can be reused. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters#example) |
 | Sidecar | Deploy components of an application into a separate process or container to provide isolation and encapsulation. |  |
+| Static Content Hosting | Deploy static content to a cloud-based storage service that can deliver them directly to the client. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting#example) |

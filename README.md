@@ -39,6 +39,7 @@ List fo design patterns I've found that look promising to learn more about / tak
 | Retry | Enable an application to handle transient failures when it tries to connect to a service or network resource, by transparently retrying a failed operation. This can improve the stability of the application. | [Reliability](reliability.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry#example) |
 | Scheduler Agent Supervisor | Coordinate a set of actions across a distributed set of services and other remote resources. | [Messaging](messaging.md) [Reliability](reliability.md) |  |
 | Sequential Convoy | Process a set of related messages in a defined order, without blocking processing of other groups of messages. | [Messaging](messaging.md) |  |
+| Sharding | Divide a data store into a set of horizontal partitions or shards. | [Data Management](data_management.md) [Performance Efficiency](performance_efficiency.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/sharding#example) |
 
 ## Categories of Design Patterns
 

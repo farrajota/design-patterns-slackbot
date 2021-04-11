@@ -11,3 +11,4 @@
 | Leader Election | Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election#example) |
 | Queue-Based Load Leveling | Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads. |  |
 | Retry | Enable an application to handle transient failures when it tries to connect to a service or network resource, by transparently retrying a failed operation. This can improve the stability of the application. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry#example) |
+| Scheduler Agent Supervisor | Coordinate a set of actions across a distributed set of services and other remote resources. |  |

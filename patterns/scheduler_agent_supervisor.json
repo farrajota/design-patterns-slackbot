@@ -1,0 +1,10 @@
+{
+    "name": "Scheduler Agent Supervisor",
+    "category": [
+        "Messaging",
+        "Reliability"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/scheduler-agent-supervisor-pattern.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor"}],
+    "summary": "Coordinate a set of actions across a distributed set of services and other remote resources."
+}

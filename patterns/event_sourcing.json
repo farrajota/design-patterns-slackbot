@@ -1,0 +1,10 @@
+{
+    "name": "Event Sourcing",
+    "category": [
+        "Data Management",
+        "Performance Efficiency"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/event-sourcing-overview.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing"}],
+    "summary": "Use an append-only store to record the full series of events that describe actions taken on data in a domain."
+}

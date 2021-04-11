@@ -1,0 +1,9 @@
+{
+    "name": "Federated Identity",
+    "category": [
+        "Security"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/federated-identity-overview.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/federated-identity"}],
+    "summary": "Delegate authentication to an external identity provider."
+}

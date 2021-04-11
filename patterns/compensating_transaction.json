@@ -1,0 +1,9 @@
+{
+    "name": "Compensating Transaction",
+    "category": [
+        "Reliability"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/compensating-transaction-diagram.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction"}],
+    "summary": "Undo the work performed by a series of steps, which together define an eventually consistent operation."
+}

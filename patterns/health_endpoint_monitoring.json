@@ -1,0 +1,13 @@
+{
+    "name": "Health Endpoint Monitoring",
+    "category": [
+        "Reliability",
+        "Operational Excellence"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/health-endpoint-monitoring-pattern.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring"}],
+    "summary": "Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals."
+}

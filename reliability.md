@@ -7,4 +7,5 @@
 | Compensating Transaction | Undo the work performed by a series of steps, which together define an eventually consistent operation. |  |
 | Deployment Stamps | Deploy multiple independent copies of application components, including data stores. |  |
 | Geodes | Deploy backend services into a set of geographical nodes, each of which can service any client request in any region. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry#example) |
+| Health Endpoint Monitoring | Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring#example) |
 | Retry | Enable an application to handle transient failures when it tries to connect to a service or network resource, by transparently retrying a failed operation. This can improve the stability of the application. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry#example) |

@@ -1,0 +1,12 @@
+{
+    "name": "Asynchronous Request-Reply",
+    "category": [
+        "Messaging"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/async-request-reply#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/async-request-fn.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/async-request-reply"}],
+    "summary": "Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response."
+}

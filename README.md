@@ -40,6 +40,7 @@ List fo design patterns I've found that look promising to learn more about / tak
 | Scheduler Agent Supervisor | Coordinate a set of actions across a distributed set of services and other remote resources. | [Messaging](messaging.md) [Reliability](reliability.md) |  |
 | Sequential Convoy | Process a set of related messages in a defined order, without blocking processing of other groups of messages. | [Messaging](messaging.md) |  |
 | Sharding | Divide a data store into a set of horizontal partitions or shards. | [Data Management](data_management.md) [Performance Efficiency](performance_efficiency.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/sharding#example) |
+| Sidecar | Deploy components of an application into a separate process or container to provide isolation and encapsulation. | [Design And Implementation](design_and_implementation.md) [Operational Excellence](operational_excellence.md) |  |
 
 ## Categories of Design Patterns
 

@@ -1,0 +1,13 @@
+{
+    "name": "Leader Election",
+    "category": [
+        "Design and Implementation",
+        "Reliability"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/leader-election-diagram.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election"}],
+    "summary": "Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances."
+}

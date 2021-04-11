@@ -36,7 +36,7 @@ def main(path: str):
         # design categories (.md)
         for category in categories:
             category_filename = f"{category.lower().replace(' ', '_')}.md"
-            if category not in category_readmes:
+            if category_filename not in category_readmes:
                 category_readmes[category_filename] = []
             category_readmes[category_filename].append(f"| {name} | {summary} | {examples_str} |")
 

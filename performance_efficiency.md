@@ -7,4 +7,5 @@
 | Command and Query Responsibility Segregation (CQRS) | Segregate operations that read data from operations that update data by using separate interfaces. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs#example) |
 | Deployment Stamps | Deploy multiple independent copies of application components, including data stores. |  |
 | Event Sourcing | Use an append-only store to record the full series of events that describe actions taken on data in a domain. |  |
+| Index Table | Create indexes over the fields in data stores that are frequently referenced by queries. |  |
 | Priority Queue | Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority. This pattern is useful in applications that offer different service level guarantees to individual clients. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/priority-queue#example) |

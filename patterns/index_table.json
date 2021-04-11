@@ -1,0 +1,10 @@
+{
+    "name": "Index Table",
+    "category": [
+        "Data Management",
+        "Performance Efficiency"
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/index-table-figure-4.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/index-table"}],
+    "summary": "Create indexes over the fields in data stores that are frequently referenced by queries."
+}

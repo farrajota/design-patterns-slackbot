@@ -5,7 +5,7 @@
         "Operational Excellence"
     ],
     "example": [
-        {"language": "conf", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation#example"}
+        {"language": "nginx conf", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation#example"}
     ],
     "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/gateway-aggregation.png",
     "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation"}],

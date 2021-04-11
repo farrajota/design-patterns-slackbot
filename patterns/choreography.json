@@ -1,0 +1,13 @@
+{
+    "name": "Choreography",
+    "category": [
+        "Messaging",
+        "Performance Efficiency"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/choreography#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/orchestrator.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/choreography"}],
+    "summary": "Let each service decide when and how a business operation is processed, instead of depending on a central orchestrator."
+}

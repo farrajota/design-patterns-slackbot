@@ -1,0 +1,14 @@
+{
+    "name": "Command and Query Responsibility Segregation (CQRS)",
+    "category": [
+        "Data Management",
+        "Design and Implementation",
+        "Performance Efficiency"
+    ],
+    "example": [
+        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs#example"}
+    ],
+    "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/command-and-query-responsibility-segregation-cqrs-separate-stores.png",
+    "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs"}],
+    "summary": "Segregate operations that read data from operations that update data by using separate interfaces."
+}

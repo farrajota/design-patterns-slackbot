@@ -5,4 +5,5 @@
 | Ambassador | Create helper services that send network requests on behalf of a consumer service or application. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador#example) |
 | Anti-Corruption Layer | Implement a façade or adapter layer between different subsystems that don't share the same semantics. |  |
 | Backends for Frontends | Create separate backend services to be consumed by specific frontend applications or interfaces. |  |
+| Command and Query Responsibility Segregation (CQRS) | Segregate operations that read data from operations that update data by using separate interfaces. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs#example) |
 | Compute Resource Consolidation | Consolidate multiple tasks or operations into a single computational unit. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation#example) |

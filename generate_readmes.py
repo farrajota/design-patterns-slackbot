@@ -82,4 +82,4 @@ def main(path: str):
 
 
 if __name__ == '__main__':
-    main(path='patterns/')
+    main(path='patterns/cloud_design/')

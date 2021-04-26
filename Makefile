@@ -12,4 +12,4 @@ test-random:
 	@echo "Done."
 
 generate:
-	python generate_readmes.py
+	python cloud_architecture/azure_cloud_design_patterns/scripts/generate_readmes.py

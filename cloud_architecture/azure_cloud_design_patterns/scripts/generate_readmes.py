@@ -3,14 +3,15 @@ from string import capwords
 import json
 
 
-def main(path: str):
-    filenames: list = os.listdir(path)
+def generate_cloud_design_patterns_readmes(dirpath: str):
+    dirpath_patterns: str = os.path.join(dirpath, "patterns")
+    filenames: list = os.listdir(dirpath_patterns)
 
     rows = []
     category_readmes = {}
     category_names = []
     for filename in sorted(filenames):
-        filepath = os.path.join(path, filename)
+        filepath = os.path.join(dirpath_patterns, filename)
         with open(filepath, 'r') as f:
             data = json.load(f)
 
@@ -18,8 +19,10 @@ def main(path: str):
         summary = data["summary"]
         categories = data["category"]
         categories_str = ""
+        reference = data["reference"]
         if any(categories):
             categories_str = " ".join([f"[{capwords(category)}]({category.lower().replace(' ', '_')}.md)" for category in categories])
+
         try:
             examples = data["example"]
         except KeyError:
@@ -28,7 +31,12 @@ def main(path: str):
         if any(examples):
             examples_str = " ".join([f"[{capwords(example['language'])}]({example['href']})" for example in examples])
 
-        row = f"| {name} | {summary} | {categories_str} | {examples_str} |"
+        try:
+            name_href = f"[{name}]({reference[0]['href']})"
+        except KeyError:
+            name_href = f"[{name}](#)"
+
+        row = f"| {name_href} | {summary} | {categories_str} | {examples_str} |"
 
         # readme.md
         rows.append(row)
@@ -45,10 +53,15 @@ def main(path: str):
 
     unique_categories = list(set(category_names))
 
-    with open("README.md", "w") as f:
-        f.write("# Design Patterns\n")
+    with open(os.path.join(dirpath, "README.md"), "w") as f:
+        f.write("# Azure Cloud Design Patterns\n")
         f.write("\n")
-        f.write("List fo design patterns I've found that look promising to learn more about / take a look at.\n")
+        f.write("List of design patterns for cloud applications.\n")
+        f.write("\n")
+        f.write("## Design Patterns Categories\n")
+        f.write("\n")
+        for category in sorted(unique_categories):
+            f.write(f"- [{capwords(category)}]({category.lower().replace(' ', '_')}.md)\n")
         f.write("\n")
         f.write("## Catalog of patterns\n")
         f.write("\n")
@@ -57,22 +70,13 @@ def main(path: str):
         for row in rows:
             f.write(f"{row}\n")
         f.write("\n")
-        f.write("## Categories of Design Patterns\n")
-        f.write("\n")
-        for category in sorted(unique_categories):
-            f.write(f"- [{capwords(category)}]({category.lower().replace(' ', '_')}.md)\n")
-        f.write("\n")
         f.write("# References\n")
         f.write("\n")
         f.write("- https://docs.microsoft.com/en-us/azure/architecture/patterns/index-patterns\n")
-        f.write("\n")
-        f.write("# License\n")
-        f.write("\n")
-        f.write("[MIT License](LICENSE)\n")
 
     for category in unique_categories:
         category_filename = f"{category.lower().replace(' ', '_')}.md"
-        with open(category_filename, "w") as f:
+        with open(os.path.join(dirpath, category_filename), "w") as f:
             f.write(f"# {capwords(category)} Patterns\n")
             f.write("\n")
             f.write("| Pattern | Summary | Implementations |\n")
@@ -82,4 +86,5 @@ def main(path: str):
 
 
 if __name__ == '__main__':
-    main(path='patterns/cloud_design/')
+    parent_dirpath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    generate_cloud_design_patterns_readmes(dirpath=parent_dirpath)

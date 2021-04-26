@@ -1,12 +1,10 @@
 {
     "name": "Ambassador",
     "category": [
-        "Design and Implementation", 
+        "Design and Implementation",
         "Operational Excellence"
     ],
-    "example": [
-        {"language": "c#", "href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador#example"}
-    ],
+    "example": [],
     "image_url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/ambassador-example.png",
     "reference": [{"href": "https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador"}],
     "summary": "Create helper services that send network requests on behalf of a consumer service or application."

@@ -2,6 +2,17 @@
 
 List of design patterns for cloud applications.
 
+## Design Patterns Categories
+
+- [Data Management](data_management.md)
+- [Design And Implementation](design_and_implementation.md)
+- [Messaging](messaging.md)
+- [Operational Excellence](operational_excellence.md)
+- [Performance Efficiency](performance_efficiency.md)
+- [Reliability](reliability.md)
+- [Resiliency](resiliency.md)
+- [Security](security.md)
+
 ## Catalog of patterns
 
 | Pattern | Summary | Category | Implementations |
@@ -46,21 +57,6 @@ List of design patterns for cloud applications.
 | [Throttling](https://docs.microsoft.com/en-us/azure/architecture/patterns/throttling) | Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service. | [Reliability](reliability.md) [Performance Efficiency](performance_efficiency.md) |  |
 | [Valet Key](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key) | Use a token or key that provides clients with restricted direct access to a specific resource or service. | [Data Management](data_management.md) [Security](security.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key#example) |
 
-## Design Patterns Categories
-
-- [Data Management](data_management.md)
-- [Design And Implementation](design_and_implementation.md)
-- [Messaging](messaging.md)
-- [Operational Excellence](operational_excellence.md)
-- [Performance Efficiency](performance_efficiency.md)
-- [Reliability](reliability.md)
-- [Resiliency](resiliency.md)
-- [Security](security.md)
-
 # References
 
 - https://docs.microsoft.com/en-us/azure/architecture/patterns/index-patterns
-
-# License
-
-[MIT License](LICENSE)

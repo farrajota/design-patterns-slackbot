@@ -65,7 +65,7 @@ def generate_cloud_design_patterns_readmes(dirpath: str):
         f.write("\n")
         f.write("## Catalog of patterns\n")
         f.write("\n")
-        f.write("| Pattern | Summary | Category | Implementations |\n")
+        f.write("| Pattern | Summary | Category | Examples |\n")
         f.write("| --- | --- | --- | --- |\n")
         for row in rows:
             f.write(f"{row}\n")
@@ -79,7 +79,7 @@ def generate_cloud_design_patterns_readmes(dirpath: str):
         with open(os.path.join(dirpath, category_filename), "w") as f:
             f.write(f"# {capwords(category)} Patterns\n")
             f.write("\n")
-            f.write("| Pattern | Summary | Implementations |\n")
+            f.write("| Pattern | Summary | Examples |\n")
             f.write("| --- | --- | --- |\n")
             for row in sorted(category_readmes[category_filename]):
                 f.write(f"{row}\n")

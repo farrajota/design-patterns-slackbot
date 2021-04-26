@@ -1,4 +1,4 @@
-# Cloud Design Patterns
+# Azure Cloud Design Patterns
 
 List of design patterns for cloud applications.
 
@@ -15,9 +15,9 @@ List of design patterns for cloud applications.
 
 ## Catalog of patterns
 
-| Pattern | Summary | Category | Implementations |
+| Pattern | Summary | Category | Examples |
 | --- | --- | --- | --- |
-| [Ambassador](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador) | Create helper services that send network requests on behalf of a consumer service or application. | [Design And Implementation](design_and_implementation.md) [Operational Excellence](operational_excellence.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador#example) |
+| [Ambassador](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador) | Create helper services that send network requests on behalf of a consumer service or application. | [Design And Implementation](design_and_implementation.md) [Operational Excellence](operational_excellence.md) |  |
 | [Anti-Corruption Layer](https://docs.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer) | Implement a façade or adapter layer between different subsystems that don't share the same semantics. | [Design And Implementation](design_and_implementation.md) [Operational Excellence](operational_excellence.md) |  |
 | [Asynchronous Request-Reply](https://docs.microsoft.com/en-us/azure/architecture/patterns/async-request-reply) | Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response. | [Messaging](messaging.md) | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/async-request-reply#example) |
 | [Backends for Frontends](https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends) | Create separate backend services to be consumed by specific frontend applications or interfaces. | [Design And Implementation](design_and_implementation.md) |  |

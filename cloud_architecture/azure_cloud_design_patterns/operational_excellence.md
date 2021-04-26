@@ -1,8 +1,8 @@
 # Operational Excellence Patterns
 
-| Pattern | Summary | Implementations |
+| Pattern | Summary | Examples |
 | --- | --- | --- |
-| Ambassador | Create helper services that send network requests on behalf of a consumer service or application. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador#example) |
+| Ambassador | Create helper services that send network requests on behalf of a consumer service or application. |  |
 | Anti-Corruption Layer | Implement a façade or adapter layer between different subsystems that don't share the same semantics. |  |
 | External Configuration Store | Move configuration information out of the application deployment package to a centralized location. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store#example) |
 | Gateway Aggregation | Use a gateway to aggregate multiple individual requests into a single request. | [Nginx Conf](https://docs.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation#example) |

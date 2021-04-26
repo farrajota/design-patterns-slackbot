@@ -1,6 +1,6 @@
 # Performance Efficiency Patterns
 
-| Pattern | Summary | Implementations |
+| Pattern | Summary | Examples |
 | --- | --- | --- |
 | Cache-Aside | Load data on demand into a cache from a data store. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/cache-aside#example) |
 | Choreography | Let each service decide when and how a business operation is processed, instead of depending on a central orchestrator. | [C#](https://docs.microsoft.com/en-us/azure/architecture/patterns/choreography#example) |

@@ -7,8 +7,13 @@ from pathlib import Path
 from string import capwords
 
 
-CURRENT_FILE_PATH = str(Path().absolute())
-PATTERNS_DIR = os.path.join(CURRENT_FILE_PATH, 'patterns')
+ROOT_DIR: str = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+design_patterns = {
+    "Cloud Architecture": [
+        os.path.join(ROOT_DIR, "cloud_architecture", "azure_cloud_design_patterns")
+    ]
+}
 
 
 def main(slack_api_key: str, channel: str, is_random: bool = False) -> None:
@@ -25,10 +30,11 @@ def main(slack_api_key: str, channel: str, is_random: bool = False) -> None:
 
 
 def send_random_slack_bot_message(slack_api_key: str, channel: str) -> None:
-    pattern_files: list = load_pattern_files(PATTERNS_DIR)
+    pattern_files: list = load_pattern_files()
     random.shuffle(pattern_files)
 
-    data: dict = load_json_file(pattern_files[0])
+    category, filepath = pattern_files[0].split(',')
+    data: dict = load_json_file(filepath)
 
     if "example" not in data:
         data["example"] = []
@@ -38,6 +44,7 @@ def send_random_slack_bot_message(slack_api_key: str, channel: str) -> None:
     msg = generate_message(
         name=data["name"],
         summary=data["summary"],
+        main_category=category,
         category=data["category"],
         example=data["example"],
         reference=data["reference"],
@@ -61,7 +68,7 @@ def send_sequential_slack_bot_message(slack_api_key: str, channel: str) -> None:
         pattern_files = f.read()
 
     if len(pattern_files) == 0:
-        pattern_files: list = load_pattern_files(PATTERNS_DIR)
+        pattern_files: list = load_pattern_files()
         random.shuffle(pattern_files)
     else:
         pattern_files = pattern_files.split('\n')
@@ -69,7 +76,8 @@ def send_sequential_slack_bot_message(slack_api_key: str, channel: str) -> None:
     with open(filepath, 'w') as f:
         f.writelines("\n".join(pattern_files[1:]))
 
-    data: dict = load_json_file(pattern_files[0])
+    category, filepath = pattern_files[0].split(',')
+    data: dict = load_json_file(filepath)
 
     if "example" not in data:
         data["example"] = []
@@ -79,6 +87,7 @@ def send_sequential_slack_bot_message(slack_api_key: str, channel: str) -> None:
     msg = generate_message(
         name=data["name"],
         summary=data["summary"],
+        main_category=category,
         category=data["category"],
         example=data["example"],
         reference=data["reference"],
@@ -92,9 +101,13 @@ def send_sequential_slack_bot_message(slack_api_key: str, channel: str) -> None:
     )
 
 
-def load_pattern_files(dirpath: str) -> list:
-    filenames = os.listdir(dirpath)
-    filepaths = [os.path.join(dirpath, filename) for filename in filenames]
+def load_pattern_files() -> list:
+    filepaths = []
+    for category in design_patterns:
+        for sub_category in design_patterns[category]:
+            dirpath = os.path.join(sub_category, "patterns")
+            filenames = os.listdir(dirpath)
+            filepaths += [",".join([category, os.path.join(dirpath, filename)]) for filename in filenames]
     return filepaths
 
 
@@ -108,6 +121,7 @@ def generate_message(
     name: str,
     summary: str,
     image_url: str,
+    main_category: str,
     category: list,
     example: list,
     reference: list,
@@ -117,7 +131,7 @@ def generate_message(
             "type": "section",
             "text": {
                 "type": "mrkdwn",
-                "text": f"Today's design pattern:"
+                "text": f"Today's design pattern on *{capwords(main_category)}*:"
             }
         },
         {
@@ -134,7 +148,7 @@ def generate_message(
             "fields": [
                 {
                     "type": "mrkdwn",
-                    "text": "*Category*\n" + '\n'.join([f"`{cat}`"for cat in category])
+                    "text": "*Category*\n" + '\n'.join([f"`{capwords(main_category)}: {cat}`"for cat in category])
                 },
                 {
                     "type": "mrkdwn",

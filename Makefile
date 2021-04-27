@@ -3,12 +3,12 @@ SLACK_CHANNEL=INSERT_SLACK_CHANNEL_HERE
 
 test:
 	@echo "Start slackbot"
-	@SLACK_API_KEY=${SLACK_API_KEY} SLACK_CHANNEL=${SLACK_CHANNEL} python slackbot/send_messages.py
+	@SLACK_API_KEY=${SLACK_API_KEY} SLACK_CHANNEL=${SLACK_CHANNEL} python slackbot/send.py
 	@echo "Done."
 
 test-random:
 	@echo "Start slackbot"
-	@SLACK_API_KEY=${SLACK_API_KEY} SLACK_CHANNEL=${SLACK_CHANNEL} python slackbot/send_messages.py --random
+	@SLACK_API_KEY=${SLACK_API_KEY} SLACK_CHANNEL=${SLACK_CHANNEL} python slackbot/send.py --random
 	@echo "Done."
 
 generate:

@@ -1,6 +1,12 @@
-# Cloud Design Patterns
+# Design Patterns
 
-List of design patterns for cloud applications.
+Send random design patterns to your slack for you or your teammates to see.
+
+The motivation for making this is due to the existence of dozens and dozens of design patterns one can [find in the wild](https://github.com/DovAmir/awesome-design-patterns#cloud-architecture) but you have no idea of their existence but still you would like to learn more about to enrich your knowledge and toolkit.
+
+This repo provides a tool to easily ingest this kind of information by providing a summarized view of the patterns which you can learn more about and share it with your friends.
+
+> Note: This repo is slowly being updated but if you would like to contribute, feel free to make a pull request and I'll gladly review it.
 
 ## Requirements
 
@@ -23,6 +29,10 @@ Then, to send a message with a random pattern just run the following script:
 python slackbot/send_messages.py --random
 ```
 
+You should see some message like the following:
+
+![Sample slack image](images/sample_message.png "Slackbot message")
+
 Additionally, to generate a random list of messages that will not be repeated and to send a single message do the following:
 
 ```bash
@@ -39,7 +49,7 @@ python slackbot/send_messages.py  # send another different one
 
 - [Azure cloud design patterns](cloud_design_patterns/README.md)
 
-# TODO
+## TODO
 
 - Add patterns:
     - [general architecture](https://github.com/DovAmir/awesome-design-patterns#general-architecture)

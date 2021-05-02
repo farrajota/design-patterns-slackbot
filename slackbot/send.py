@@ -191,7 +191,7 @@ def slack_send_message(msg: dict, slack_api_key: str, channel: str) -> None:
         "channel": channel,
         "blocks": json.dumps(msg),
     }
-    response = requests.post("https://slack.com/api/chat.postMessage", params=payload)
+    response = requests.post("https://slack.com/api/chat.postMessage", data=payload)
     response_json = response.json()
     if response.status_code != 200 or not response_json["ok"]:
         raise RuntimeError(f"Slack request failed!\n {json.dumps(response_json, indent=2)}")

@@ -148,7 +148,7 @@ def generate_message(
             "fields": [
                 {
                     "type": "mrkdwn",
-                    "text": "*Category*\n" + '\n'.join([f"`{capwords(main_category)}: {cat}`"for cat in category])
+                    "text": "*Category*\n" + '\n'.join([f"`{cat}`"for cat in category])
                 },
                 {
                     "type": "mrkdwn",

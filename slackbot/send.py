@@ -131,7 +131,7 @@ def generate_message(
             "type": "section",
             "text": {
                 "type": "mrkdwn",
-                "text": f"Today's design pattern on *{capwords(main_category)}*:"
+                "text": f"Today's design pattern on *{capwords(main_category)}*: <{reference[0]['href']}|{capwords(name)} pattern>"
             }
         },
         {
@@ -139,7 +139,7 @@ def generate_message(
             "block_id": "section567",
             "text": {
                 "type": "mrkdwn",
-                "text": f"<{reference[0]['href']}|{capwords(name)} pattern> \n {summary}"
+                "text": f"*Summary* \n {summary}"
             }
         },
         {
@@ -148,7 +148,7 @@ def generate_message(
             "fields": [
                 {
                     "type": "mrkdwn",
-                    "text": "*Category*\n" + '\n'.join([f"`{capwords(main_category)}: {cat}`"for cat in category])
+                    "text": "*Category*\n" + '\n'.join([f"`{cat}`"for cat in category])
                 },
                 {
                     "type": "mrkdwn",

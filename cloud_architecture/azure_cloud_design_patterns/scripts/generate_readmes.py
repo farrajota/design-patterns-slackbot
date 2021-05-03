@@ -46,7 +46,7 @@ def generate_cloud_design_patterns_readmes(dirpath: str):
             category_filename = f"{category.lower().replace(' ', '_')}.md"
             if category_filename not in category_readmes:
                 category_readmes[category_filename] = []
-            category_readmes[category_filename].append(f"| {name} | {summary} | {examples_str} |")
+            category_readmes[category_filename].append(f"| {name_href} | {summary} | {examples_str} |")
 
         for category in categories:
             category_names.append(category)
